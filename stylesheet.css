@@ -2,7 +2,7 @@
     box-sizing: border-box;
     border-radius: 4px;
 }
-a:hover, a:active {
+a:hover, a:active, a {
     text-decoration: none;
     color: inherit;
 }
@@ -12,7 +12,7 @@ body {
     background: #abc9a2;
 }
 .header{
-    background: rgba(204, 204, 204, 0.8);
+    background: rgb(236, 236, 236);
     font-size: 30px;
     text-align: center;
     padding: 30px;
@@ -21,30 +21,49 @@ body {
     float: left;
     width: 100%;
 }
-.panel {
+.column {
     float: left;
     width: 100%;
-}
-.logo{
-    float: left;
+
 }
 .thumbnail {
     background-color: #d8ddce;
     width: 100%;
     padding: 20px;
-}
-.post {
-    background-color: rgb(255, 255, 234);
-    padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .smallPost {
     background-color: rgb(255, 255, 234);
     padding: 20px;
     margin-top: 20px;
 }
+.post {
+    background-color: rgb(255, 255, 234);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.grid{
+    margin-left: 7%;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows:33% 33% 33%;
+    grid-template-areas:
+            "doc1 doc2 doc3 doc4"
+            "doc5 doc6 doc7 doc8"
+            "doc9 doc10 doc11 doc12";
+
+}
+
 .window{
-    background-color: #cccccc;
+    background-color: rgb(236, 236, 236);
+    padding: 15px;
+    margin-top: 20px;
+}
+.popular{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
     padding: 20px;
     margin-top: 20px;
 }
@@ -55,10 +74,12 @@ body {
     clear: both;
 }
 .footer {
-    padding: 20px;
-    text-align: center;
-    background: rgb(204, 204, 204);
     margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background: rgb(236, 236, 236);
+
+
 }
 
 /*// Medium screens*/
@@ -68,25 +89,6 @@ body {
 
 /*// Large screens*/
 @media only screen and (min-width: 64.063em) {
-    * {
-        box-sizing: border-box;
-        border-radius: 4px;
-    }
-    a:hover, a:active, a {
-        text-decoration: none;
-        color: inherit;
-    }
-    body {
-        font-family: Arial;
-        padding: 20px;
-        background: #abc9a2;
-    }
-    .header{
-        background: rgb(236, 236, 236);
-        font-size: 30px;
-        text-align: center;
-        padding: 30px;
-    }
     .content {
         float: left;
         width: 75%;
@@ -95,108 +97,11 @@ body {
         float: left;
         width: 25%;
         padding-left: 20px;
-    }
-    .thumbnail {
-        background-color: #d8ddce;
-        width: 100%;
-        padding: 20px;
-        margin-bottom: 10px;
-    }
-    .smallPost {
-        background-color: rgb(255, 255, 234);
-        padding: 20px;
-        margin-top: 20px;
-    }
-    .post {
-        background-color: rgb(255, 255, 234);
-        padding: 20px;
-        margin-top: 20px;
-    }
-    .window{
-        background-color: rgb(236, 236, 236);
-        padding: 15px;
-        margin-top: 20px;
-    }
-    .popular{
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(236, 236, 236);
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .middle:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .footer {
-
-        text-align: center;
-        background: rgb(236, 236, 236);
-
-
     }
 
 }
 
 /*// XLarge screens*/
 @media only screen and (min-width: 90.063em) {
-    * {
-        box-sizing: border-box;
-        border-radius: 4px;
-    }
-    body {
-        font-family: Arial;
-        padding: 20px;
-        background: #c2eef1;
-    }
-    .header{
-        background: rgba(163, 220, 225, 0.8);
-        font-size: 30px;
-        text-align: center;
-        padding: 30px;
-    }
-    .content {
-        float: left;
-        width: 75%;
-    }
-    .column {
-        float: left;
-        width: 25%;
-        padding-left: 20px;
-    }
-    .thumbnail {
-        background-color: #d8ddce;
-        width: 100%;
-        padding: 20px;
-    }
-    .smallPost {
-        background-color: rgba(53, 248, 255, 0.3);
-        padding: 20px;
-        margin-top: 20px;
-    }
-    .post {
-        background-color: rgba(53, 248, 255, 0.3);
-        padding: 20px;
-        margin-top: 20px;
-    }
-    .window{
-        background-color: rgba(53, 248, 255, 0.3);
-        padding: 20px;
-        margin-top: 20px;
-    }
 
-    .middle:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .footer {
-        padding: 20px;
-        text-align: center;
-        background: rgba(163, 220, 225, 0.8);
-        margin-top: 20px;
-
-    }
 }
