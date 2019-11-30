@@ -8,20 +8,39 @@ a:hover, a:active, a {
 }
 body {
     font-family: Arial;
-    padding: 20px;
+    padding: 5px;
     background: #abc9a2;
 }
-.header{
+.header {
     background: rgb(236, 236, 236);
     font-size: 30px;
-    text-align: center;
     padding: 30px;
+}
+.nav {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(236, 236, 236)
+}
+.nav > li{
+    float:left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav > li a {
+
 }
 .content {
     float: left;
     width: 100%;
 }
 .column {
+    box-sizing: border-box;
     float: left;
     width: 100%;
 
