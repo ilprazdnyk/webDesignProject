@@ -1,6 +1,16 @@
 * {
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-family: 'Play';
+}
+
+.header, .content, .post, .window, .popular, .footer
+{
+    box-shadow: 4px 4px 3px 1px lightslategrey;
+}
+.post, .smallPost{
+    border: 1px solid wheat;
+    box-shadow:5px 8px 15px 3px wheat inset;
 }
 a:hover, a:active, a {
     text-decoration: none;
@@ -11,39 +21,41 @@ body {
     padding: 5px;
     background: #abc9a2;
 }
-.header {
+.idk {
     background: rgb(236, 236, 236);
     font-size: 30px;
     padding: 30px;
 }
-.nav {
-
+.header {
     list-style-type: none;
-    margin: 0;
+    margin: 10px 0px 0px 0px;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(236, 236, 236)
+    background-color: rgb(236, 236, 236);
 }
-.nav > li{
+.header > a, h1{
     float:left;
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    opacity: 85%;
 }
-.nav > li a {
+.header > p a {
 
 }
 .content {
     float: left;
     width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
 }
 .column {
     box-sizing: border-box;
     float: left;
     width: 100%;
-
 }
 .thumbnail {
     background-color: #d8ddce;
@@ -71,7 +83,26 @@ body {
             "doc1 doc2 doc3 doc4"
             "doc5 doc6 doc7 doc8"
             "doc9 doc10 doc11 doc12";
+}
 
+.grid > a {
+    border: 1px solid wheat;
+    border-radius: 0px;
+}
+
+.gridImage{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgDesc{
+    font-family: 'Share Tech Mono';
+    font-size: 20px;
+    font-variant: small-caps;
+    display: block;
+    text-align: center;
 }
 
 .window{
@@ -97,8 +128,6 @@ body {
     padding: 15px;
     text-align: center;
     background: rgb(236, 236, 236);
-
-
 }
 
 /*// Medium screens*/
