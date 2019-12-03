@@ -17,15 +17,10 @@ a:hover, a:active, a {
     color: inherit;
 }
 body {
-    font-family: Arial;
     padding: 5px;
     background: #abc9a2;
 }
-.idk {
-    background: rgb(236, 236, 236);
-    font-size: 30px;
-    padding: 30px;
-}
+
 .header {
     list-style-type: none;
     margin: 10px 0px 0px 0px;
@@ -52,8 +47,9 @@ body {
 }
 .column {
     box-sizing: border-box;
-    float: left;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .thumbnail {
     background-color: #d8ddce;
@@ -144,7 +140,6 @@ body {
         width: 75%;
     }
     .column {
-        float: left;
         width: 25%;
         padding-left: 20px;
     }
