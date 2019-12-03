@@ -42,9 +42,7 @@ body {
     text-decoration: none;
     opacity: 85%;
 }
-.header > p a {
 
-}
 .content {
     float: left;
     width: 100%;
@@ -78,14 +76,16 @@ body {
     margin-left: 7%;
     display: grid;
     grid-template-columns:25% 25% 25% 25%;
-    grid-template-rows:33% 33% 33%;
+    grid-template-rows:30% 3% 30% 3% 30% 3%;
     grid-template-areas:
+
             "doc1 doc2 doc3 doc4"
+            "text1 text2 text3 text4"
             "doc5 doc6 doc7 doc8"
             "doc9 doc10 doc11 doc12";
 }
 
-.grid > a {
+.grid_item{
     border: 1px solid wheat;
     border-radius: 0px;
 }
@@ -113,6 +113,8 @@ body {
 .popular{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(236, 236, 236);
     padding: 20px;
     margin-top: 20px;
